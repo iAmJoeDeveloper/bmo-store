@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Create a New Password</title>
+		<title>My Account</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -46,33 +46,12 @@
 				width: 300px;
 			}
 
-			.logo {
-				display: none;
-				justify-self: center;
-
-				width: 150px;
-
-				margin-bottom: 48px;
-			}
-
 			.title {
-				text-align: center;
+				text-align: start;
 
-				margin-bottom: 12px;
+				margin-bottom: 36px;
 
 				font-size: var(--lg);
-			}
-
-			.subtitle {
-				text-align: center;
-
-				margin-top: 0;
-				margin-bottom: 32px;
-
-				font-size: var(--md);
-				font-weight: 300;
-
-				color: var(--very-light-pink);
 			}
 
 			.form {
@@ -91,29 +70,23 @@
 				font-size: var(--sm);
 			}
 
-			.input {
-				height: 30px;
-				padding: 6px;
-				margin-bottom: 12px;
-
+			.value {
+				color: var(--very-light-pink);
 				font-size: var(--md);
-
-				border: none;
-				border-radius: 8px;
-				background-color: var(--text-input-field);
+				margin: 8px 0 32px 0;
 			}
 
-			.primary-button {
+			.secondary-button {
 				width: 100%;
 				height: 50px;
 
 				font-size: var(--md);
 				font-weight: bold;
 
-				color: var(--white);
-				border: none;
+				color: var(--hospital-green);
+				border: 1px solid var(--hospital-green);
 				border-radius: 8px;
-				background-color: var(--hospital-green);
+				background-color: var(--white);
 				cursor: pointer;
 			}
 
@@ -135,41 +108,27 @@
 				.title {
 					margin: 30px 0 36px 0;
 				}
-
-				.subtitle {
-					display: none;
-				}
 			}
 		</style>
 	</head>
 	<body>
 		<div class="login">
 			<div class="form-container">
-				<img src="./logos/logo_yard_sale.svg" alt="logo" class="logo" />
-
-				<h1 class="title">Create a New Password</h1>
-				<p class="subtitle">Enter a new password for your account</p>
+				<h1 class="title">My Account</h1>
 
 				<form action="" class="form">
 					<div>
-						<label for="password" class="label">Password</label>
-						<input
-							type="password"
-							id="password"
-							placeholder="******"
-							class="input input-password"
-						/>
+						<label for="name" class="label">Name</label>
+						<p class="value">Joe Suarez</p>
 
-						<label for="new-password" class="label">New Password</label>
-						<input
-							type="password"
-							id="new-password"
-							placeholder="******"
-							class="input input-password"
-						/>
+						<label for="email" class="label">Email</label>
+						<p class="value">joesuarez@gmail.com</p>
+
+						<label for="password" class="label">Password</label>
+						<p class="value">******</p>
 					</div>
 
-					<input type="submit" value="Confirm" class="primary-button login-button" />
+					<input type="submit" value="Create Account" class="secondary-button login-button" />
 				</form>
 			</div>
 		</div>
